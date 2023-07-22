@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- Tell the user we will create a working form-->
+    <h1>HTML Registration Form</h1>
+    <br />
+    <form action="#">
+        <div>
+            <label for="username">Enter your name</label>
+            <input type="text" id="username" value="Ansari" readonly disabled size="50" />
+            <!-- The input value attribute specifies an initial value for an input field:-->
+            <!-- The input read only attribute specifies that an input field is read-only-->
+            <!-- The input disabled attribute specifies that an input field should be disabled.-->
+            <!-- The input size attribute specifies the variable width, in characters, of an input field-->
+            <!-- The default value for size is 20.-->
+            <!-- The input maxlength attribute specifies the maximum number of characters allowed in field.-->
+
+            <input type="text" maxlength="10">
+            <!-- It can be used in Phone Number-->
+            <!-- The input min and max attributes specify the minimum and maximum values for an input field.-->
+            <br />
+            <br />
+
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31" /><br /><br />
+
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-01" max="2022-01-01" /> <br /><br />
+
+            <!-- The input multiple attribute specifies that the user is allowed to enter more than one value in an input field.-->
+
+            <label for="files">Select files:</label>
+            <input type="file" id="file" name="files" multiple /> <br /><br />
+
+            <!-- The input placeholder attribute specifies a short hint that describes the expected value of an input field (a sample value or a short description of the expected format.)-->
+
+            <input type="text" maxlength="10" placeholder="demo@.com">
+
+            <!-- The input list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.-->
+
+                <input list="browsers" name="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Safari"></option>
+                </datalist>
+          
+        </div>
+
+        
+        <input type="password" name="" id="" />
+        <input type="email" name="" id="" />
+        <input type="number" name="" id="" />
+        <input type="color" name="" id="" />
+        <input type="date" name="" id="" />
+        <input type="range" name="" id="" />
+
+        <!-- The <select> element defines a drop-down list: -->
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="Mustang">Mustang</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Range Rover">Range Rover</option>
+            <option value="Audi">Audi</option>
+        </select>
+
+        <!-- The <textarea> element defines a multi-line input field (a text area).
+        The rows attribute specifies the visible number of lines in a text area.
+        The cols attribute specifies the visible width of a text area -->
+
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!-- The <button> element defines a clickable button:-->
+        <button onclick="alert('Hii')">Click HERE</button>
+
+        <!-- The <fieldset> element is used to group related data in a form.
+        The <legend> element defines a caption for the <fieldset> element.-->
+
+        <form action="/action_page.php">
+            <fieldset>
+                <legend>Portfolio:</legend>
+                <label for="fname">First name:</label><br />
+                <input type="text" id="fname" name="fname" value="John" /><br />
+                <label for="lname">Last name:</label><br />
+                <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+                <input type="submit" value="submit" />
+            </fieldset>
+        </form>
+    </form>
+</body>
+</html>
